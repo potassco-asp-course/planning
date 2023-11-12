@@ -1,11 +1,31 @@
 % ----------------------------------------------------------------------
 \begin{frame}{Automated planning}
+
   \begin{itemize}
-  \item \emph{action} variables describing operations leading to state changes
-  \item \emph{fluent} variables describing properties that change over time
-  \item start and goal
-  \item \emph{Inertia} handle properties that do not change
-  \item \emph{Ramification} handle indirect effects of actions
+  \item \structure{Planning} \
+    compute an action sequence transforming the state of the world from the initial state to the goal state
+    \medskip
+  \item \structure{Action description}\normalsize
+    \begin{itemize}
+    \item \structure{Fluents} \ properties that change over time
+    \item \structure{Actions} \ operations leading to state changes
+      \begin{itemize}\small
+      \item action preconditions
+      \item action effects
+      \end{itemize}
+    \item \structure{Laws}
+      \begin{itemize}\small
+      \item \structure{State constraints} \ domain knowledge
+      \item \structure{Inertia}           \ handle properties that do not change
+      \item \structure{Ramification}      \ handle indirect effects of actions
+      \end{itemize}
+    \end{itemize}
+
+  \item \structure{Problem instance}\normalsize
+    \begin{itemize}
+    \item \structure{Objects}' \ definitions
+    \item \structure{Start and goal state} \ a set of fluents
+    \end{itemize}
   \end{itemize}
 \end{frame}
 % ----------------------------------------------------------------------
